@@ -15,9 +15,6 @@ for (var i = 0; i < squares.length; i++) {
   squares[i].style.background = colors[i];
   squares[i].addEventListener("click", function() {
     var clickedColor = this.style.backgroundColor; //Needed thanks to Firefox!
-    //var clickedColor = this.style.background.split(')')[0]+')'; //Needed thanks to Firefox!
-    //console.log(clickedColor);
-    //console.log(clickedColor.split(')')[0]+')');
     
     if (clickedColor === pickedColor) {
       messageDisplay.textContent = "Correct!";
